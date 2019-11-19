@@ -1,9 +1,10 @@
 # WalkOnLightStreet
 
-사진을 클릭하시면 유튜브링크로 연결됩니다.//
-[![Video Label](https://i.imgur.com/GiNEl7x.png)](https://www.youtube.com/watch?v=GgxPJePbgq8)  
+사진을 클릭하시면 유튜브링크로 연결됩니다.  
   
-
+[![Video Label](https://i.imgur.com/GiNEl7x.png)](https://www.youtube.com/watch?v=GgxPJePbgq8)    
+    
+  
 server : host000.com                   
 connetion : tomcat                     
 database : mysql                       
