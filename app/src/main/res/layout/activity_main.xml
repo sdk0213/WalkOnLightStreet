@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+    android:layout_width="270dp"
+    android:layout_height="40dp"
+    android:hint="   목적지 검색"
+    android:textAlignment="textStart"
+    android:textColorHint="#8c8c8c"
+    android:id="@+id/findstreet"
+    android:background="#bcffffff"
+    android:layout_marginTop="13dp"
+    android:drawableLeft="@drawable/find"
+    android:layout_alignParentTop="true"
+    android:layout_alignEnd="@+id/bulb" />
+
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#8c8c8c"
+        android:id="@+id/findrank"
+        android:background="#bcffffff"
+        android:layout_marginTop="17dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/rank"
+        android:layout_below="@+id/findstreet"
+        android:layout_alignStart="@+id/findstreet" />
+
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#8c8c8c"
+        android:id="@+id/findLight"
+        android:background="#bcffffff"
+        android:scaleType="centerInside"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sun"
+        android:layout_below="@+id/findrank"
+        android:layout_alignStart="@+id/findrank" />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#8c8c8c"
+        android:id="@+id/findall"
+        android:background="#bcffffff"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/all"
+        android:layout_below="@+id/findLight"
+        android:layout_alignStart="@+id/findLight"/>
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#8c8c8c"
+        android:id="@+id/delete"
+        android:background="#bcffffff"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/x"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/findall"
+        android:layout_alignStart="@+id/findall"/>
+
+    <Button
+        android:id="@+id/btn_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#90ff000d"
+        android:text="비상벨설정"
+        android:textSize="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/delete"
+        android:layout_alignStart="@+id/delete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="신고하기"
+        android:textSize="15dp"
+        android:background="#000000"
+        android:id="@+id/btn_call"
+        android:layout_above="@+id/findLight"
+        android:layout_toEndOf="@+id/findstreet" />
+
+    <Button
+        android:id="@+id/btn_cctv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/btn_bell"
+        android:layout_below="@+id/btn_bell"
+        android:layout_marginTop="15dp"
+        android:background="#90ff000d"
+        android:text="cctv설정"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밝기 (+)"
+        android:textSize="22dp"
+        android:background="#900015ff"
+        android:id="@+id/btn_up"
+        android:layout_marginLeft="89dp"
+        android:layout_marginStart="89dp"
+        android:layout_alignBaseline="@+id/btn_down"
+        android:layout_alignBottom="@+id/btn_down"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밝기 (-)"
+        android:textSize="22dp"
+        android:background="#900015ff"
+        android:id="@+id/btn_down"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_up"
+        android:layout_toEndOf="@+id/btn_up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밝기 정도(1~10)(기본값 :5 )"
+        android:textSize="20dp"
+        android:background="#50ffffff"
+        android:id="@+id/textLight"
+        android:textColor="#000000"
+        android:layout_above="@+id/textLightValue"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#ff0000"
+        android:textSize="45dp"
+        android:background="#50ffffff"
+        android:id="@+id/textLightValue"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/btn_up"
+        android:layout_alignRight="@+id/btn_up"
+        android:layout_alignEnd="@+id/btn_up" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bulb"
+        android:layout_alignTop="@+id/textLightValue"
+        android:layout_alignRight="@+id/btn_down"
+        android:layout_alignEnd="@+id/btn_down"
+        android:layout_alignBottom="@+id/textLightValue" />
+
+
+
+</RelativeLayout>
+

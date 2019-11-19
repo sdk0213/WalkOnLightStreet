@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="\n빛 생성을\n도와준사람들의 \n순위입니다.\n 감사합니다.\n---------------\nRANK\n---------------"
+        android:textAlignment="center"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="1. sdk0213\n2. chongsu\n3. seungtae\n4. juck2945\n5. showme\n6.iwo8879\n7.sensemaker\n8.uichong2\n9.widowmaker\n10.macree"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0008ff"
+        android:text="\n\n\n\n     --광길만걷자--"/>
+
+
+</LinearLayout>
