@@ -4,11 +4,12 @@
 server : host000.com                   
 connetion : tomcat                     
 database : mysql                       
-app-develop : android studio           
-
+app-develop : android studio            
+API : googleMapsAPI  
  
-
-
+  
+ 
+ 
 src -> main -> walkonlightstreet => .java          
             -> res -> layout  => layout              
             -> res -> icons..                        
@@ -18,7 +19,9 @@ build.gradle -> gradle
 ![image](https://user-images.githubusercontent.com/51182964/69148223-261fe800-0b17-11ea-831d-babbf0270bd4.png)
 
 ![image](https://user-images.githubusercontent.com/51182964/69148256-3afc7b80-0b17-11ea-944b-a7b695b14400.png)
-
+  
+class definition  
+   
 ![image](https://user-images.githubusercontent.com/51182964/69148294-5071a580-0b17-11ea-8482-3761c6397464.png)
 
 ![image](https://user-images.githubusercontent.com/51182964/69148301-54052c80-0b17-11ea-9c15-4789b066c2ae.png)
